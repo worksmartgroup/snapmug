@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="app_name">snapmug</string>
+<string name="facebook_app_id">668304348983781</string>
+<string name="fb_login_protocol_scheme">fb8a8b9dec345f39e7be1fbb5fe76b06f6</string>
+<string name="facebook_client_token">8cd7bf34741eb7fdd09347c7e763a0d3</string>
+</resources>

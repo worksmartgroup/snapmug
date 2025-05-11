@@ -1,0 +1,231 @@
+{
+  "project_info": {
+    "project_number": "534586490308",
+    "firebase_url": "https://snapmugflutter-default-rtdb.firebaseio.com",
+    "project_id": "snapmugflutter",
+    "storage_bucket": "snapmugflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534586490308:android:21e8919ca1c3dbf03d7891",
+        "android_client_info": {
+          "package_name": "app.snapmug.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534586490308-rn2vop42sn34eljdscqn30i7ab1a7hbu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.snapmug.admin",
+            "certificate_hash": "bffdfc41ab8e1764b3470e09c977b11a9509f43e"
+          }
+        },
+        {
+          "client_id": "534586490308-fpccq491a869l65lk4aq2kpf6gfrm763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhK5vHpxzCh_jgP7sfuWMabS77lS7SFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534586490308-d0f4rnbfu1bq268roqpbn5vs8gv1jk38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534586490308-5fkmpfvkun9icbs1626khjrkcu4rbmm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.worksmartgroup.snapmugArtists"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534586490308:android:51b3e0cd6ff44a883d7891",
+        "android_client_info": {
+          "package_name": "com.worksmartgroup.snapmug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534586490308-79tho03423np7t0la659952fsv8hu7m9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.worksmartgroup.snapmug",
+            "certificate_hash": "3c0281dee5d173a4e83f4fe83a6f41c71bd8fc89"
+          }
+        },
+        {
+          "client_id": "534586490308-uumpam0l3kgef53gufms0gei4b4idp7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.worksmartgroup.snapmug",
+            "certificate_hash": "bffdfc41ab8e1764b3470e09c977b11a9509f43e"
+          }
+        },
+        {
+          "client_id": "534586490308-fpccq491a869l65lk4aq2kpf6gfrm763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhK5vHpxzCh_jgP7sfuWMabS77lS7SFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534586490308-d0f4rnbfu1bq268roqpbn5vs8gv1jk38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534586490308-5fkmpfvkun9icbs1626khjrkcu4rbmm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.worksmartgroup.snapmugArtists"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534586490308:android:3cc7fb07e632a5303d7891",
+        "android_client_info": {
+          "package_name": "com.worksmartgroup.snapmug_artists"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534586490308-rio5u0segg3h5e7pfkst5emkrmjoasek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.worksmartgroup.snapmug_artists",
+            "certificate_hash": "bffdfc41ab8e1764b3470e09c977b11a9509f43e"
+          }
+        },
+        {
+          "client_id": "534586490308-fpccq491a869l65lk4aq2kpf6gfrm763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhK5vHpxzCh_jgP7sfuWMabS77lS7SFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534586490308-d0f4rnbfu1bq268roqpbn5vs8gv1jk38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534586490308-5fkmpfvkun9icbs1626khjrkcu4rbmm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.worksmartgroup.snapmugArtists"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534586490308:android:37951f7c55c0a8603d7891",
+        "android_client_info": {
+          "package_name": "com.worksmartgroup.snapmug_for_real_artists"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534586490308-5klhe53qknd88mf2s3earqhuh7jvonkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.worksmartgroup.snapmug_for_real_artists",
+            "certificate_hash": "bffdfc41ab8e1764b3470e09c977b11a9509f43e"
+          }
+        },
+        {
+          "client_id": "534586490308-fpccq491a869l65lk4aq2kpf6gfrm763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhK5vHpxzCh_jgP7sfuWMabS77lS7SFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534586490308-d0f4rnbfu1bq268roqpbn5vs8gv1jk38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534586490308-5fkmpfvkun9icbs1626khjrkcu4rbmm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.worksmartgroup.snapmugArtists"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534586490308:android:7970ba169e83284d3d7891",
+        "android_client_info": {
+          "package_name": "com.worksmartgroup.snapmug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534586490308-fpccq491a869l65lk4aq2kpf6gfrm763.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhK5vHpxzCh_jgP7sfuWMabS77lS7SFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534586490308-d0f4rnbfu1bq268roqpbn5vs8gv1jk38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534586490308-5fkmpfvkun9icbs1626khjrkcu4rbmm5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.worksmartgroup.snapmugArtists"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

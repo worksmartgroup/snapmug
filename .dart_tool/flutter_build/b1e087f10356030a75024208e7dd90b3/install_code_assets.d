@@ -1,0 +1,1 @@
+ C:\\Flutter\ Projects\\snapmug_user\\.dart_tool\\flutter_build\\b1e087f10356030a75024208e7dd90b3\\native_assets.json: 
