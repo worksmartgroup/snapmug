@@ -93,7 +93,7 @@ class _ArtistPageState extends State<ArtistPage> {
                       height: Get.height * 0.02,
                     ),
                     SizedBox(
-                      height: Get.height * 0.36,
+                      height: Get.height * 0.2,
                       child: SingleChildScrollView(
                         child: Column(
                           children: [

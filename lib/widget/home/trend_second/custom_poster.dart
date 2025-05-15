@@ -17,11 +17,12 @@ class CustomPosterTrendSecond extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: Get.width * 0.2,
-      height: Get.height * 0.1,
+      // width: Get.width * 0.005,
+      height: Get.height * 0.08,
       decoration: BoxDecoration(),
       child: Stack(
         clipBehavior: Clip.none,
+        alignment: Alignment.topCenter,
         children: [
           SizedBox(
             // width: Get.width * 0.15,
@@ -43,7 +44,7 @@ class CustomPosterTrendSecond extends StatelessWidget {
           ),
           Positioned(
             top: -20,
-            right: Get.width * 0.11,
+            right: Get.width * 0.06,
             child: InkWell(
               onTap: () {
                 Get.to(ArtistPage(), arguments: artistId);

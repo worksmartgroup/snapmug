@@ -238,10 +238,10 @@ class _PlayerControlsWidgetState<T> extends State<PlayerControlsWidget> {
         topRight: Radius.circular(15),
       ),
       child: SizedBox(
-        height: Get.height * 0.15,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            const SizedBox(height: 10),
+            SizedBox(height: Get.height * 0.005),
             InkWell(
               onTap: widget.isFullAudioScreen
                   ? null

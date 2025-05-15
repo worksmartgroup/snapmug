@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:get/route_manager.dart';
+import 'package:get/get.dart';
 import 'package:gif_view/gif_view.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:snapmug/globals.dart' as globals;
@@ -303,106 +303,103 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
         ],
       ),
       body: _getPage(_selectedIndex),
-      bottomNavigationBar: Container(
-        height: Get.height * 0.05,
-        decoration: BoxDecoration(
-            // color: yellowColor,
-            borderRadius: BorderRadius.circular(15)),
+      bottomNavigationBar: SizedBox(
+        height: Get.height * 0.09,
         child: Stack(
           clipBehavior: Clip.none,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
-              child: Theme(
-                data: Theme.of(context).copyWith(
-                    // sets the background color of the `BottomNavigationBar`
-                    canvasColor: yellowColor,
-                    // sets the active color of the `BottomNavigationBar` if `Brightness` is light
-                    primaryColor: yellowColor,
-                    textTheme: Theme.of(context)
-                        .textTheme
-                        .copyWith(bodySmall: TextStyle(color: yellowColor))),
-                child: BottomNavigationBar(
-                  type: BottomNavigationBarType.fixed,
-                  selectedFontSize: 0.0,
-                  unselectedFontSize: 0.0,
-                  backgroundColor: yellowColor,
-                  items: <BottomNavigationBarItem>[
-                    BottomNavigationBarItem(
-                      icon: CircleAvatar(
-                        backgroundColor: _selectedIndex == 0
+              child: BottomNavigationBar(
+                type: BottomNavigationBarType.fixed,
+                selectedFontSize: 0.0,
+                unselectedFontSize: 0.0,
+                backgroundColor: yellowColor,
+                showSelectedLabels: false,
+                showUnselectedLabels: false,
+                items: <BottomNavigationBarItem>[
+                  BottomNavigationBarItem(
+                    icon: Container(
+                      padding:
+                          const EdgeInsets.all(4), // تقليل المساحة الداخلية
+
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: _selectedIndex == 0
+                            ? Colors.black26
+                            : Colors.transparent,
+                      ),
+                      child: Image.asset(
+                        'assets/noun-menu-4748399.png',
+                        //  width: Get.width * 0.08,
+                        height: Get.height * 0.03,
+                        fit: BoxFit.cover,
+                        color: Colors.black,
+                      ),
+                    ),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: _selectedIndex == 1
+                              ? Colors.black26
+                              : Colors.transparent,
+                        ),
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.black,
+                          size: Get.height * 0.03,
+                        )),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: CircleAvatar(
+                        backgroundColor: _selectedIndex == 2
+                            ? Colors.black26
+                            : Colors.transparent,
+                        child: Padding(
+                          padding: const EdgeInsets.all(5),
+                          child: Image.asset(
+                            'assets/noun-multimedia-6419441.png',
+                            //   width: Get.width * 0.07,
+                            height: Get.height * 0.03,
+                            color: Colors.black,
+                          ),
+                        )),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: CircleAvatar(
+                        backgroundColor: _selectedIndex == 3
                             ? Colors.black26
                             : Colors.transparent,
                         child: Image.asset(
-                          'assets/noun-menu-4748399.png',
-                          width: Get.width * 0.07,
-                          height: Get.height * 0.1,
+                          'assets/noun-fire-6639941.png',
+                          //  width: Get.width * 0.07,
+                          height: Get.height * 0.03,
                           color: Colors.black,
-                        ),
-                      ),
-                      label: '',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: CircleAvatar(
-                          backgroundColor: _selectedIndex == 1
-                              ? Colors.black26
-                              : Colors.transparent,
-                          child: const Icon(
-                            Icons.search,
-                            color: Colors.black,
-                            size: 25,
-                          )),
-                      label: '',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: CircleAvatar(
-                          backgroundColor: _selectedIndex == 2
-                              ? Colors.black26
-                              : Colors.transparent,
-                          child: Padding(
-                            padding: const EdgeInsets.all(5),
-                            child: Image.asset(
-                              'assets/noun-multimedia-6419441.png',
-                              width: Get.width * 0.07,
-                              height: Get.height * 0.1,
-                              color: Colors.black,
-                            ),
-                          )),
-                      label: '',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: CircleAvatar(
-                          backgroundColor: _selectedIndex == 3
-                              ? Colors.black26
-                              : Colors.transparent,
-                          child: Image.asset(
-                            'assets/noun-fire-6639941.png',
-                            width: Get.width * 0.07,
-                            height: Get.height * 0.1,
-                            color: Colors.black,
-                          )),
-                      label: '',
-                    ),
-                    BottomNavigationBarItem(
-                      icon: Icon(Icons.abc),
-                      //  CircleAvatar(
-                      //     radius: 25,
-                      //     backgroundColor: _selectedIndex == 4
-                      //         ? Colors.black26
-                      //         : Colors.transparent,
-                      //     child: Image.asset(
-                      //       'assets/noun-money-bag-icon-2004052.png',
-                      //       width: 0,
-                      //       height: 0,
-                      //       color: Colors.black,
-                      //     )),
-                      label: '',
-                    ),
-                  ],
-                  currentIndex: _selectedIndex,
-                  selectedItemColor: Colors.amber[800],
-                  onTap: _onItemTapped,
-                ),
+                        )),
+                    label: '',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: CircleAvatar(
+                        backgroundColor: _selectedIndex == 1
+                            ? Colors.black26
+                            : Colors.transparent,
+                        child: Icon(
+                          Icons.home,
+                          color: Colors.black,
+                          size: Get.height * 0.02,
+                        )),
+                    label: '',
+                  ),
+                ],
+                currentIndex: _selectedIndex,
+                selectedItemColor: Colors.amber[800],
+                onTap: _onItemTapped,
               ),
             ),
             Positioned(

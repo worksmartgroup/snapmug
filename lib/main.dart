@@ -12,7 +12,6 @@ import 'package:just_audio_background/just_audio_background.dart';
 import 'package:snapmug/core/class/colors.dart';
 import 'package:snapmug/pages/splash_screen.dart';
 
-
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -75,6 +74,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Snapmug',
+      useInheritedMediaQuery: true,
+      // locale: DevicePreview.locale(context),
+      // builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(

@@ -15,7 +15,7 @@ class ImagesWidget extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(5),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: CachedNetworkImage(
@@ -26,13 +26,14 @@ class ImagesWidget extends StatelessWidget {
               placeholder: (context, url) =>
                   const Center(child: CircularProgressIndicator()),
               errorWidget: (context, url, error) => CachedNetworkImage(
+                  fit: BoxFit.cover,
                   imageUrl:
                       'https://firebasestorage.googleapis.com/v0/b/snapmug-54ade.appspot.com/o/tmpp%2Fwell.jpeg?alt=media&token=1749d61b-734b-4739-b9e1-e5daefcbb500'),
             ),
           ),
         ),
         Positioned(
-          bottom: -50,
+          bottom: -Get.height * 0.07,
           left: 25,
           child: Container(
             decoration: BoxDecoration(
@@ -46,12 +47,15 @@ class ImagesWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(100),
               child: CachedNetworkImage(
                 fit: BoxFit.cover,
-                height: Get.height * 0.13,
-                width: Get.width * 0.27,
+                height: Get.height * 0.1,
+                width: Get.width * 0.2,
                 imageUrl: artist.profilePicture,
                 placeholder: (context, url) =>
                     const Center(child: CircularProgressIndicator()),
                 errorWidget: (context, url, error) => CachedNetworkImage(
+                    fit: BoxFit.cover,
+                    height: Get.height * 0.1,
+                    width: Get.width * 0.2,
                     imageUrl:
                         'https://firebasestorage.googleapis.com/v0/b/snapmug-54ade.appspot.com/o/tmpp%2Fwell.jpeg?alt=media&token=1749d61b-734b-4739-b9e1-e5daefcbb500'),
               ),

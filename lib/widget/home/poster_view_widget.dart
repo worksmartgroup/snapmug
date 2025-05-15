@@ -55,12 +55,12 @@ class _PosterViewWidgetState extends State<PosterViewWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: Get.height * 0.2,
+      height: Get.height * 0.17,
       child: Column(
         children: [
           songTitles.isNotEmpty
               ? Container(
-                  height: Get.height * 0.16,
+                  height: Get.height * 0.13,
                   width: Get.width * 0.9,
                   margin: EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(

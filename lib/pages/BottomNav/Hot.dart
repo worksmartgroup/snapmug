@@ -245,18 +245,23 @@ class _SongTileWidgetState extends State<SongTileWidget> {
             title: Text(widget.songData?.songName ?? '',
                 style: const TextStyle(
                     color: Colors.white, fontSize: 10)), // Display song name
-            subtitle: InkWell(
-              onTap: () {
-                if (!widget.isOpenPage) {
-                  Get.to(ArtistPage(),
-                      arguments: widget.songData?.userId ?? '');
-                }
-              },
-              child: Padding(
-                padding: EdgeInsets.all(5),
-                child: Text(widget.songData?.artistName ?? '',
-                    style: TextStyle(color: yellowColor, fontSize: 10)),
-              ),
+            subtitle: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                InkWell(
+                  onTap: () {
+                    if (!widget.isOpenPage) {
+                      Get.to(ArtistPage(),
+                          arguments: widget.songData?.userId ?? '');
+                    }
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.all(5),
+                    child: Text(widget.songData?.artistName ?? '',
+                        style: TextStyle(color: yellowColor, fontSize: 10)),
+                  ),
+                ),
+              ],
             ), // Display artist name
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
