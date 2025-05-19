@@ -60,7 +60,7 @@ class _PosterViewWidgetState extends State<PosterViewWidget> {
         children: [
           songTitles.isNotEmpty
               ? Container(
-                  height: Get.height * 0.13,
+                  height: Get.height * 0.12,
                   width: Get.width * 0.9,
                   margin: EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
@@ -221,10 +221,10 @@ class _PosterViewWidgetState extends State<PosterViewWidget> {
                 )
               : SizedBox(),
           SizedBox(
-            height: 10,
+            height: 5,
           ),
           SizedBox(
-            height: 20,
+            height: 17,
             width: 100,
             child: ListView.separated(
               separatorBuilder: (context, index) => SizedBox(

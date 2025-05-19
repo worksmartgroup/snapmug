@@ -64,7 +64,9 @@ Future<void> main() async {
     androidNotificationOngoing: true,
   );
   await MobileAds.instance.initialize();
-  runApp(const MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
